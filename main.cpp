@@ -1,22 +1,45 @@
 #include <iostream>
 #include <string>
 
-// Project 1 — Your Name
+// Project 1 — Betsy Caudel
 // CIS 5 Week 04 · Student card
+
+//Removes need to rewrite withing the code many times. Simplifies the code.
+using std::cin;
+using std::cout;
+using std::string;
+using std::endl;
 
 int main() {
   const int CURRENT_YEAR = 2026;
 
-  // TODO (week 3): declare and initialize the four boxes
-  //   first (std::string), age (int), credits (int), gpa (double)
+  // Declaration and initialization of the 4 variables.
+  string name = "";
+  int age = 0;
+  int credits = 0;
+  double gpa = 0.0;
 
-  // TODO (week 2): a cout question, then a cin into the box — four times
+  // Askes for information from user then saves information into the proper variable.
+  cout << "First name? ";
+  cin >> name;
+  cout << "Age? ";
+  cin >> age;
+  cout << "Credits this term? ";
+  cin >> credits;
+  cout << "GPA? ";
+  cin >> gpa;
+  cout << endl;
 
-  // TODO (week 4): one computed line with an operator
-  //   int grad_year = CURRENT_YEAR + 4;
+  //Computed line with an operator
+  int grad_year = CURRENT_YEAR + 4;
 
-  // TODO (weeks 1-4): print the card from the variable names
-  //   header line, one labeled line per variable, then the computed value
-
+  // Prints the card from the variable names
+  cout << "=== Student Card ===" << endl;
+  cout << "Name: " << name << endl;
+  cout << "Age: " << age << endl;
+  cout << "Credits this term: " << credits << endl;
+  cout << "GPA: " << gpa << endl;
+  cout << "Expected graduation: " << grad_year << endl;
+  
   return 0;
 }
